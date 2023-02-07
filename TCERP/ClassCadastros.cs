@@ -29,7 +29,7 @@ namespace TCERP
 
         public static void InserirProduto(string nome_produto, string tipo_produto, string unidade_produto, string quantidade_produto, string preço_produto)
         {
-            string sql = @"insert into erp.cadastros_produtos
+            string sql = @"insert into erp.cadastros_produtos values
                             (@nome_produto,@tipo_produto,@unidade_produto,@quantidade_produto,@preço_produto)";
 
             SqlCommand cmd = new SqlCommand(sql, Conexao.conn);
@@ -46,7 +46,7 @@ namespace TCERP
         public static void InserirFornecedor(string razao_social_forn,string nome_fantasia_forn, string nome_contato_forn, string telefone_1_forn, string telefone_2_forn, string atuação_forn, string cnpj_forn, string fornecimento_forn, string end_forn, string cep_forn, string pais_forn, string uf_forn, string cidade_forn)
         {
 
-            string sql = @"insert into erp.cadastros_fornecedor
+            string sql = @"insert into erp.cadastros_fornecedor values
                             (@razao_social_forn,@nome_fantasia_forn,@nome_contato_forn,@telefone_1_forn,@telefone_2_forn,@atuação_forn,@cnpj_forn,@fornecimento_forn,@end_forn,@cep_forn,@pais_forn,@uf_forn,@cidade_forn)";
 
             SqlCommand cmd = new SqlCommand(sql, Conexao.conn);

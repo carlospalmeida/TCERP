@@ -107,7 +107,7 @@
             this.btnFuncionarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFuncionarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFuncionarios.Location = new System.Drawing.Point(436, 43);
+            this.btnFuncionarios.Location = new System.Drawing.Point(426, 42);
             this.btnFuncionarios.Name = "btnFuncionarios";
             this.btnFuncionarios.Size = new System.Drawing.Size(114, 31);
             this.btnFuncionarios.TabIndex = 1;
@@ -121,7 +121,7 @@
             this.btnProdutos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProdutos.Location = new System.Drawing.Point(304, 42);
+            this.btnProdutos.Location = new System.Drawing.Point(294, 41);
             this.btnProdutos.Name = "btnProdutos";
             this.btnProdutos.Size = new System.Drawing.Size(114, 31);
             this.btnProdutos.TabIndex = 2;
@@ -135,7 +135,7 @@
             this.btnFornecedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFornecedores.Location = new System.Drawing.Point(177, 43);
+            this.btnFornecedores.Location = new System.Drawing.Point(167, 42);
             this.btnFornecedores.Name = "btnFornecedores";
             this.btnFornecedores.Size = new System.Drawing.Size(121, 31);
             this.btnFornecedores.TabIndex = 3;
@@ -604,7 +604,7 @@
             this.btnCadastrarProduto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnCadastrarProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrarProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarProduto.Location = new System.Drawing.Point(278, 469);
+            this.btnCadastrarProduto.Location = new System.Drawing.Point(287, 526);
             this.btnCadastrarProduto.Name = "btnCadastrarProduto";
             this.btnCadastrarProduto.Size = new System.Drawing.Size(121, 31);
             this.btnCadastrarProduto.TabIndex = 65;
@@ -618,7 +618,7 @@
             this.btnCadastrarFornecedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnCadastrarFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrarFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarFornecedor.Location = new System.Drawing.Point(278, 412);
+            this.btnCadastrarFornecedor.Location = new System.Drawing.Point(287, 526);
             this.btnCadastrarFornecedor.Name = "btnCadastrarFornecedor";
             this.btnCadastrarFornecedor.Size = new System.Drawing.Size(121, 31);
             this.btnCadastrarFornecedor.TabIndex = 66;

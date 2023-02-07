@@ -34,7 +34,7 @@ namespace TCERP
 
         private void PainePrincipal_Paint(object sender, PaintEventArgs e)
         {
-
+            AbriFormPainel(new TelaInicial());
         }
 
         private void MenuPrincipal_Paint(object sender, PaintEventArgs e)
@@ -80,7 +80,7 @@ namespace TCERP
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            
+            AbriFormPainel(new TelaInicial());
         }
 
         private void button5_Click(object sender, EventArgs e)

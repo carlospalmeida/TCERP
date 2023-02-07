@@ -312,7 +312,7 @@ namespace TCERP
         {
             Conexao.Conectar();
             dataGridView1.Visible = true;
-            dataGridView1.DataSource = Classcadastro.Selecionar("select * from cadastros_fornecedor");
+            dataGridView1.DataSource = Classcadastro.Selecionar("select * from erp.cadastros_fornecedor");
         }
 
         private void btnCadastrarFuncionario_Click(object sender, EventArgs e)
@@ -325,7 +325,7 @@ namespace TCERP
         private void btnCadastrarProduto_Click(object sender, EventArgs e)
         {
             Conexao.Conectar();
-            ClassCadastros.InserirProduto(txtProduto1.Text, txtProduto2.Text, txtProduto3.Text, txtProduto4.Text, txtProduto5.Text);
+            ClassCadastros.InserirProduto(txtProduto1.Text, txtProduto2.Text,txtProduto3.Text, txtProduto4.Text, txtProduto5.Text);
             Conexao.Desconectar();
         }
 

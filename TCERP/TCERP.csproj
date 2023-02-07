@@ -73,8 +73,10 @@
     <Compile Include="cadastros.Designer.cs">
       <DependentUpon>cadastros.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClassAprovacao.cs" />
     <Compile Include="Classcadastro.cs" />
     <Compile Include="ClassCadastros.cs" />
+    <Compile Include="ClasSolicitacao.cs" />
     <Compile Include="compra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +109,12 @@
     </Compile>
     <Compile Include="Solicitacao.Designer.cs">
       <DependentUpon>Solicitacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaInicial.Designer.cs">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaPrincipal.cs">
       <SubType>Form</SubType>
@@ -150,6 +158,9 @@
     </Compile>
     <EmbeddedResource Include="Solicitacao.resx">
       <DependentUpon>Solicitacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaInicial.resx">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>

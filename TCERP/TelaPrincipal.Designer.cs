@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.MenuPrincipal = new System.Windows.Forms.Panel();
-            this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.PainePrincipal = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -39,10 +36,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnGerenciamento = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PainePrincipal = new System.Windows.Forms.Panel();
             this.MenuPrincipal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuPrincipal
@@ -62,36 +62,6 @@
             this.MenuPrincipal.TabIndex = 0;
             this.MenuPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuPrincipal_Paint);
             // 
-            // BarraTitulo
-            // 
-            this.BarraTitulo.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BarraTitulo.Controls.Add(this.pictureBox1);
-            this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BarraTitulo.Location = new System.Drawing.Point(250, 0);
-            this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(791, 50);
-            this.BarraTitulo.TabIndex = 1;
-            // 
-            // PainePrincipal
-            // 
-            this.PainePrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PainePrincipal.Location = new System.Drawing.Point(250, 50);
-            this.PainePrincipal.Name = "PainePrincipal";
-            this.PainePrincipal.Size = new System.Drawing.Size(791, 609);
-            this.PainePrincipal.TabIndex = 2;
-            this.PainePrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.PainePrincipal_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::TCERP.Properties.Resources.idle1;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 35);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // button5
             // 
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -104,7 +74,7 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = global::TCERP.Properties.Resources.local_na_rede_internet;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(3, 429);
+            this.button5.Location = new System.Drawing.Point(0, 538);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(244, 45);
             this.button5.TabIndex = 17;
@@ -223,6 +193,36 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // BarraTitulo
+            // 
+            this.BarraTitulo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BarraTitulo.Controls.Add(this.pictureBox1);
+            this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BarraTitulo.Location = new System.Drawing.Point(250, 0);
+            this.BarraTitulo.Name = "BarraTitulo";
+            this.BarraTitulo.Size = new System.Drawing.Size(791, 50);
+            this.BarraTitulo.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::TCERP.Properties.Resources.idle1;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 35);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // PainePrincipal
+            // 
+            this.PainePrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PainePrincipal.Location = new System.Drawing.Point(250, 50);
+            this.PainePrincipal.Name = "PainePrincipal";
+            this.PainePrincipal.Size = new System.Drawing.Size(791, 609);
+            this.PainePrincipal.TabIndex = 2;
+            this.PainePrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.PainePrincipal_Paint);
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,9 +238,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaPrincipal";
             this.MenuPrincipal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.BarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
