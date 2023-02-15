@@ -37,11 +37,13 @@
             this.btnGerenciamento = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PainePrincipal = new System.Windows.Forms.Panel();
             this.MenuPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.BarraTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +76,7 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = global::TCERP.Properties.Resources.local_na_rede_internet;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 538);
+            this.button5.Location = new System.Drawing.Point(3, 602);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(244, 45);
             this.button5.TabIndex = 17;
@@ -134,7 +136,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::TCERP.Properties.Resources.gerenciamento_de_projetos;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 215);
+            this.button2.Location = new System.Drawing.Point(1, 214);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(244, 45);
             this.button2.TabIndex = 14;
@@ -184,24 +186,41 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox2.Image = global::TCERP.Properties.Resources.TCERP_Logo2;
-            this.pictureBox2.Location = new System.Drawing.Point(-6, -12);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(250, 74);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseClick);
             // 
             // BarraTitulo
             // 
             this.BarraTitulo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BarraTitulo.Controls.Add(this.pictureBox3);
             this.BarraTitulo.Controls.Add(this.pictureBox1);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(250, 0);
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(791, 50);
             this.BarraTitulo.TabIndex = 1;
+            this.BarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.BarraTitulo_Paint);
+            this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::TCERP.Properties.Resources.sair;
+            this.pictureBox3.Location = new System.Drawing.Point(699, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(92, 44);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click_1);
             // 
             // pictureBox1
             // 
@@ -209,13 +228,14 @@
             this.pictureBox1.Image = global::TCERP.Properties.Resources.idle1;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 35);
+            this.pictureBox1.Size = new System.Drawing.Size(55, 47);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // PainePrincipal
             // 
+            this.PainePrincipal.BackColor = System.Drawing.Color.White;
             this.PainePrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PainePrincipal.Location = new System.Drawing.Point(250, 50);
             this.PainePrincipal.Name = "PainePrincipal";
@@ -237,9 +257,11 @@
             this.Name = "TelaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaPrincipal";
+            this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             this.MenuPrincipal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.BarraTitulo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -258,5 +280,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

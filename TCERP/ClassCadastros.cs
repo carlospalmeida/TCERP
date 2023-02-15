@@ -14,7 +14,7 @@ namespace TCERP
 
         {
             string sql = @"insert into erp.cadastros_de_funcionarios values 
-                            (@func_nome,@func_sobrenome,@func_cargo,@func_email,@func_periodo,@func_celular)";
+                            (@func_nome,@func_sobrenome,@func_cargo,@func_email,@func_periodo,@func_celular,@Preco_Fixo)";
 
             SqlCommand cmd = new SqlCommand(sql, Conexao.conn);
             cmd.Parameters.AddWithValue("func_nome", func_nome);
@@ -23,11 +23,12 @@ namespace TCERP
             cmd.Parameters.AddWithValue("func_email", func_email);
             cmd.Parameters.AddWithValue("func_periodo", func_periodo);
             cmd.Parameters.AddWithValue("func_celular", func_celular);
+            
 
             cmd.ExecuteNonQuery();
         }
 
-        public static void InserirProduto(string nome_produto, string tipo_produto, string unidade_produto, string quantidade_produto, string preço_produto)
+        public static void InserirProduto(string nome_produto, string tipo_produto, string unidade_produto, float quantidade_produto, float preço_produto)
         {
             string sql = @"insert into erp.cadastros_produtos values
                             (@nome_produto,@tipo_produto,@unidade_produto,@quantidade_produto,@preço_produto)";
@@ -63,7 +64,7 @@ namespace TCERP
             cmd.Parameters.AddWithValue("pais_forn", pais_forn);
             cmd.Parameters.AddWithValue("uf_forn", uf_forn);
             cmd.Parameters.AddWithValue("cidade_forn", cidade_forn);
-
+            
 
             cmd.ExecuteNonQuery();
 

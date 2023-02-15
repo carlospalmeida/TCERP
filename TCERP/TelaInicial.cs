@@ -16,5 +16,10 @@ namespace TCERP
         {
             InitializeComponent();
         }
+
+        private void TelaInicial_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

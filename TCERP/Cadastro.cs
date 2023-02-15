@@ -130,26 +130,40 @@ namespace TCERP
 
         private void btNCadastroG_Click(object sender, EventArgs e)
         {
-            
-            Conexao.Conectar();
-            Classcadastro.Inserir1(txtNome.Text,txtSobreno.Text,txtCurso.Text,txtEmail.Text,txtPerioCur.Text,txtTurma.Text,txtTel.Text,txtLogin.Text,txtSenha.Text);
-            MessageBox.Show("Cadastro de Aluno realizado com sucesso!");
-            Conexao.Desconectar();
-            this.Hide();
-            Login tela = new Login();
-            tela.Show();
+            try
+            {
+                Conexao.Conectar();
+                Classcadastro.Inserir1(txtNome.Text, txtSobreno.Text, txtCurso.Text, txtEmail.Text, txtPerioCur.Text, txtTurma.Text, txtTel.Text, txtLogin.Text, txtSenha.Text);
+                MessageBox.Show("Cadastro de Aluno realizado com sucesso!");
+                Conexao.Desconectar();
+                this.Hide();
+                Login tela = new Login();
+                tela.Show();
+            }
+            catch
+            {
+                MessageBox.Show("Não foi possivel se cadastrar,inisira dados validos");
+            }
 
         }
 
         private void btnCadastroDOC_Click(object sender, EventArgs e)
         {
-            Conexao.Conectar();
-            Classcadastro.Inserir(txtNomeDOC.Text, txtSobreDOC.Text, txtCargoDOC.Text, txtLoginDOC.Text, txtSenhDOC.Text);
-            MessageBox.Show("Docente cadastrado com sucesso!");
-            Conexao.Desconectar();
-            this.Hide();
-            Login tela = new Login();
-            tela.Show();
+            try
+            {
+                Conexao.Conectar();
+                Classcadastro.Inserir(txtNomeDOC.Text, txtSobreDOC.Text, txtCargoDOC.Text, txtLoginDOC.Text, txtSenhDOC.Text);
+                MessageBox.Show("Docente cadastrado com sucesso!");
+                Conexao.Desconectar();
+                this.Hide();
+                Login tela = new Login();
+                tela.Show();
+            }
+            catch
+            {
+                MessageBox.Show("Não foi possivel se cadastrar,inisira dados validos");
+            }
+
         }
     }
 }

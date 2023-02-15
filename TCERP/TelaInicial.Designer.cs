@@ -29,52 +29,55 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaInicial));
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.TCERPLogo = new System.Windows.Forms.PictureBox();
+            this.tcerp = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.TCERPLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcerp)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // TCERPLogo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(204, 79);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(370, 108);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TCERP";
+            this.TCERPLogo.BackColor = System.Drawing.Color.White;
+            this.TCERPLogo.Image = global::TCERP.Properties.Resources.TCERP_Logo_definitiva;
+            this.TCERPLogo.Location = new System.Drawing.Point(232, 104);
+            this.TCERPLogo.Name = "TCERPLogo";
+            this.TCERPLogo.Size = new System.Drawing.Size(326, 116);
+            this.TCERPLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.TCERPLogo.TabIndex = 5;
+            this.TCERPLogo.TabStop = false;
             // 
-            // pictureBox1
+            // tcerp
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.AliceBlue;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(222, 190);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(326, 289);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.tcerp.BackColor = System.Drawing.Color.White;
+            this.tcerp.Image = ((System.Drawing.Image)(resources.GetObject("tcerp.Image")));
+            this.tcerp.Location = new System.Drawing.Point(232, 215);
+            this.tcerp.Name = "tcerp";
+            this.tcerp.Size = new System.Drawing.Size(326, 289);
+            this.tcerp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.tcerp.TabIndex = 6;
+            this.tcerp.TabStop = false;
             // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(791, 609);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TCERPLogo);
+            this.Controls.Add(this.tcerp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TelaInicial";
             this.Text = "TelaInicial";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.TelaInicial_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.TCERPLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcerp)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox TCERPLogo;
+        private System.Windows.Forms.PictureBox tcerp;
     }
 }
