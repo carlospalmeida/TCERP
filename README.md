@@ -20,14 +20,14 @@ um curso de habilitação profissional tecnica em informatica como projeto intre
 
 ## Contribuições
 
->```Analise,desenvolvimento de BD``` -  Thiago Felipe Guimarães Oliveira 
+>```Analise e desenvolvimento do banco de dados``` -  Thiago Felipe Guimarães Oliveira 
 
 <img align="center" alt="Link" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />[Link do linkedin](https://www.linkedin.com/in/thiago-felipe-guimar%C3%A3es-oliveira-8b29a2249/)
 
 <img align="center" alt="Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />[Link do github](https://github.com/Thiagofgoliver)
 
 
->```Desenvolvimento``` - Carlos Eduardo Pereira Almeida
+>```Analise e esenvolvimento``` - Carlos Eduardo Pereira Almeida
 
 <img align="center" alt="Link" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />[Link do linkedin](https://www.linkedin.com/in/carlos-eduardo-pereira-almeida-251b03239/)
 
