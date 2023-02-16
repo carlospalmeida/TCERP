@@ -28,7 +28,7 @@ sera disponibilizado o download do mesmo.
 <img align="center" alt="Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />[Link do github](https://github.com/Thiagofgoliver)
 
 
->```Analise e esenvolvimento``` - Carlos Eduardo Pereira Almeida
+>```Analise e desenvolvimento``` - Carlos Eduardo Pereira Almeida
 
 <img align="center" alt="Link" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />[Link do linkedin](https://www.linkedin.com/in/carlos-eduardo-pereira-almeida-251b03239/)
 
