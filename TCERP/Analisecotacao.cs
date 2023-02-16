@@ -16,5 +16,10 @@ namespace TCERP
         {
             InitializeComponent();
         }
+
+        private void Analisecotacao_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sistema em Desenvolvimento");
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace TCERP
         {
             InitializeComponent();
         }
+
+        private void compra_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sistema em desenvolvimento");
+        }
     }
 }

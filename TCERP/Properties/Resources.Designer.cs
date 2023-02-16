@@ -163,9 +163,29 @@ namespace TCERP.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sair {
+            get {
+                object obj = ResourceManager.GetObject("sair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TCERP_Logo {
             get {
                 object obj = ResourceManager.GetObject("TCERP Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TCERP_Logo_definitiva {
+            get {
+                object obj = ResourceManager.GetObject("TCERP Logo definitiva", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

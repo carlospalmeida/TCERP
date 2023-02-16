@@ -40,10 +40,12 @@
             this.txtCDsolicitação = new System.Windows.Forms.TextBox();
             this.txtProduto = new System.Windows.Forms.TextBox();
             this.txtSolicitante = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtAprovacao = new System.Windows.Forms.ComboBox();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtDataSolicitação = new System.Windows.Forms.TextBox();
+            this.txtCD = new System.Windows.Forms.TextBox();
+            this.CD = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +73,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(55, 291);
+            this.label8.Location = new System.Drawing.Point(12, 291);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(149, 18);
             this.label8.TabIndex = 58;
@@ -154,17 +156,17 @@
             this.txtSolicitante.Size = new System.Drawing.Size(135, 20);
             this.txtSolicitante.TabIndex = 70;
             // 
-            // comboBox1
+            // txtAprovacao
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.txtAprovacao.FormattingEnabled = true;
+            this.txtAprovacao.Items.AddRange(new object[] {
             "Em Analise",
             "Aprovado",
             "Reprovado"});
-            this.comboBox1.Location = new System.Drawing.Point(58, 312);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(146, 21);
-            this.comboBox1.TabIndex = 73;
+            this.txtAprovacao.Location = new System.Drawing.Point(15, 312);
+            this.txtAprovacao.Name = "txtAprovacao";
+            this.txtAprovacao.Size = new System.Drawing.Size(146, 21);
+            this.txtAprovacao.TabIndex = 73;
             // 
             // btnAtualizar
             // 
@@ -192,6 +194,7 @@
             this.button1.TabIndex = 75;
             this.button1.Text = "Remover Status";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtDataSolicitação
             // 
@@ -200,16 +203,35 @@
             this.txtDataSolicitação.Size = new System.Drawing.Size(100, 20);
             this.txtDataSolicitação.TabIndex = 76;
             // 
+            // txtCD
+            // 
+            this.txtCD.Location = new System.Drawing.Point(44, 44);
+            this.txtCD.Name = "txtCD";
+            this.txtCD.Size = new System.Drawing.Size(41, 20);
+            this.txtCD.TabIndex = 78;
+            // 
+            // CD
+            // 
+            this.CD.AutoSize = true;
+            this.CD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CD.Location = new System.Drawing.Point(12, 48);
+            this.CD.Name = "CD";
+            this.CD.Size = new System.Drawing.Size(26, 16);
+            this.CD.TabIndex = 77;
+            this.CD.Text = "CD";
+            // 
             // Aprovacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(791, 609);
+            this.Controls.Add(this.txtCD);
+            this.Controls.Add(this.CD);
             this.Controls.Add(this.txtDataSolicitação);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAtualizar);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtAprovacao);
             this.Controls.Add(this.txtProduto);
             this.Controls.Add(this.txtSolicitante);
             this.Controls.Add(this.txtCDsolicitação);
@@ -246,9 +268,11 @@
         private System.Windows.Forms.TextBox txtCDsolicitação;
         private System.Windows.Forms.TextBox txtProduto;
         private System.Windows.Forms.TextBox txtSolicitante;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox txtAprovacao;
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtDataSolicitação;
+        private System.Windows.Forms.TextBox txtCD;
+        private System.Windows.Forms.Label CD;
     }
 }

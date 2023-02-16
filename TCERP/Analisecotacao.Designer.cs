@@ -51,6 +51,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Analisecotacao";
             this.Text = "Analisecotacao";
+            this.Load += new System.EventHandler(this.Analisecotacao_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

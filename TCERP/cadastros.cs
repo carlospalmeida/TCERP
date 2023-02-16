@@ -27,6 +27,7 @@ namespace TCERP
 
         }
 
+
         private void cadastros_Load(object sender, EventArgs e)
         {
             //Funcionarios
@@ -109,9 +110,16 @@ namespace TCERP
 
         private void btnGerenciar_Click(object sender, EventArgs e)
         {
-            Conexao.Conectar();
-            dataGridView1.Visible = true;
-            dataGridView1.DataSource = Classcadastro.Selecionar("select * from erp.cadastros_de_funcionarios");
+            try
+            {
+                Conexao.Conectar();
+                dataGridView1.Visible = true;
+                dataGridView1.DataSource = Classcadastro.Selecionar("select * from erp.cadastros_de_funcionarios");
+            }
+            catch
+            {
+                MessageBox.Show("Não foi possivel se conectar ao Banco,tente novamente");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -131,6 +139,8 @@ namespace TCERP
             txtFUNC6.Visible = true;
             btnCadastrarFuncionario.Visible = true;
             btnGerenciarFuncionario.Visible = true;
+            dataGridView1.Visible = true;
+           
 
             //deixar invisivel
             lbRAZ.Visible = false;
@@ -177,9 +187,16 @@ namespace TCERP
 
         private void btnGerenciarProduto_Click(object sender, EventArgs e)
         {
-            Conexao.Conectar();
-            dataGridView1.Visible = true;
-            dataGridView1.DataSource = Classcadastro.Selecionar("select * from erp.cadastros_produtos");
+            try
+            {
+                Conexao.Conectar();
+                dataGridView1.Visible = true;
+                dataGridView1.DataSource = Classcadastro.Selecionar("select * from erp.cadastros_produtos");
+            }
+            catch
+            {
+                MessageBox.Show("Não foi possivel se conectar ao Banco,tente novamente");
+            }
         }
 
         private void btnProdutos_Click(object sender, EventArgs e)
@@ -196,7 +213,8 @@ namespace TCERP
             txtProduto5.Visible = true;
             btnCadastrarProduto.Visible = true;
             btnGerenciarProduto.Visible = true;
-
+            dataGridView1.Visible = true;
+            dataGridView1.DataSource = Classcadastro.Selecionar("select * from erp.cadastros_produtos");
 
             //deixar invisivel
 
@@ -242,6 +260,7 @@ namespace TCERP
             txtFornecedor13.Visible = false;
             btnCadastrarFornecedor.Visible = false;
             btnGerenciarFornecedor.Visible = false;
+            
         }
 
         private void btnFornecedores_Click(object sender, EventArgs e)
@@ -276,6 +295,9 @@ namespace TCERP
             txtFornecedor13.Visible = true;
             btnCadastrarFornecedor.Visible = true;
             btnGerenciarFornecedor.Visible = true;
+            lbPreço.Visible = true;
+            dataGridView1.Visible = true;
+            dataGridView1.DataSource = Classcadastro.Selecionar("select * from erp.cadastros_fornecedor");
 
             //deixar invisivel
             lbNomePord.Visible = false;
@@ -305,35 +327,68 @@ namespace TCERP
             btnCadastrarFuncionario.Visible = false;
             btnGerenciarFuncionario.Visible = false;
 
+            
 
         }
 
         private void btnGerenciarFornecedor_Click(object sender, EventArgs e)
         {
-            Conexao.Conectar();
-            dataGridView1.Visible = true;
-            dataGridView1.DataSource = Classcadastro.Selecionar("select * from erp.cadastros_fornecedor");
+            try
+            {
+                Conexao.Conectar();
+                dataGridView1.Visible = true;
+                dataGridView1.DataSource = Classcadastro.Selecionar("select * from erp.cadastros_fornecedor");
+            }
+            catch
+            {
+                MessageBox.Show("Não foi possivel se conectar ao Banco,tente novamente");
+            }
         }
 
         private void btnCadastrarFuncionario_Click(object sender, EventArgs e)
         {
-            Conexao.Conectar();
-            ClassCadastros.InserirFuncionario(txtFUNC.Text, txtFUNC2.Text, txtFUNC3.Text, txtFUNC4.Text, txtFUNC5.Text, txtFUNC6.Text);
-            Conexao.Desconectar();
+            try
+            {
+                Conexao.Conectar();
+                ClassCadastros.InserirFuncionario(txtFUNC.Text, txtFUNC2.Text, txtFUNC3.Text, txtFUNC4.Text, txtFUNC5.Text, txtFUNC6.Text);
+                Conexao.Desconectar();
+                MessageBox.Show("Cadastrado com sucesso");
+            }
+            catch
+            {
+                MessageBox.Show("Insira os dados corretamente para efetuar o cadastro de seu Funcionario");
+            }
         }
 
         private void btnCadastrarProduto_Click(object sender, EventArgs e)
         {
-            Conexao.Conectar();
-            ClassCadastros.InserirProduto(txtProduto1.Text, txtProduto2.Text,txtProduto3.Text, txtProduto4.Text, txtProduto5.Text);
-            Conexao.Desconectar();
+            try
+            {
+                Conexao.Conectar();
+                ClassCadastros.InserirProduto(txtProduto1.Text, txtProduto2.Text, txtProduto3.Text, float.Parse(txtProduto4.Text), float.Parse(txtProduto5.Text));
+                Conexao.Desconectar();
+                MessageBox.Show("Cadastrado com sucesso");
+            }
+            catch
+            {
+                MessageBox.Show("Insira Dados validos para efetuar o Cadastro de produto");
+            }
+
         }
 
         private void btnCadastrarFornecedor_Click(object sender, EventArgs e)
         {
-            Conexao.Conectar();
-            ClassCadastros.InserirFornecedor(txtFornecedor1.Text, txtFornecedor2.Text, txtFornecedor3.Text, txtFornecedor4.Text, txtFornecedor5.Text, txtFornecedor6.Text, txtFornecedor7.Text, txtFornecedor8.Text, txtFornecedor9.Text, txtFornecedor10.Text, txtFornecedor11.Text, txtFornecedor12.Text, txtFornecedor13.Text);
-            Conexao.Desconectar();
+            try
+            {
+                Conexao.Conectar();
+                ClassCadastros.InserirFornecedor(txtFornecedor1.Text, txtFornecedor2.Text, txtFornecedor3.Text, txtFornecedor4.Text, txtFornecedor5.Text, txtFornecedor6.Text, txtFornecedor7.Text, txtFornecedor8.Text, txtFornecedor9.Text, txtFornecedor10.Text, txtFornecedor11.Text, txtFornecedor12.Text, txtFornecedor13.Text);
+                Conexao.Desconectar();
+                MessageBox.Show("Cadastrado com sucesso");
+            }
+            catch
+            {
+                MessageBox.Show("Insira Dados Validos para efutar cadastro de fornecedores");
+            }
         }
     }
 }

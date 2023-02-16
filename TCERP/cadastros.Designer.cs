@@ -539,7 +539,7 @@
             this.btnCadastrarFuncionario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnCadastrarFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrarFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarFuncionario.Location = new System.Drawing.Point(278, 526);
+            this.btnCadastrarFuncionario.Location = new System.Drawing.Point(278, 530);
             this.btnCadastrarFuncionario.Name = "btnCadastrarFuncionario";
             this.btnCadastrarFuncionario.Size = new System.Drawing.Size(121, 31);
             this.btnCadastrarFuncionario.TabIndex = 59;
@@ -553,7 +553,7 @@
             this.btnGerenciarFuncionario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnGerenciarFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerenciarFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGerenciarFuncionario.Location = new System.Drawing.Point(419, 527);
+            this.btnGerenciarFuncionario.Location = new System.Drawing.Point(405, 530);
             this.btnGerenciarFuncionario.Name = "btnGerenciarFuncionario";
             this.btnGerenciarFuncionario.Size = new System.Drawing.Size(121, 31);
             this.btnGerenciarFuncionario.TabIndex = 60;
@@ -568,6 +568,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(497, 280);
             this.dataGridView1.TabIndex = 61;
+            this.dataGridView1.Visible = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnGerenciarProduto
@@ -576,7 +577,7 @@
             this.btnGerenciarProduto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnGerenciarProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerenciarProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGerenciarProduto.Location = new System.Drawing.Point(419, 527);
+            this.btnGerenciarProduto.Location = new System.Drawing.Point(405, 530);
             this.btnGerenciarProduto.Name = "btnGerenciarProduto";
             this.btnGerenciarProduto.Size = new System.Drawing.Size(121, 31);
             this.btnGerenciarProduto.TabIndex = 63;
@@ -590,7 +591,7 @@
             this.btnGerenciarFornecedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnGerenciarFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerenciarFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGerenciarFornecedor.Location = new System.Drawing.Point(429, 526);
+            this.btnGerenciarFornecedor.Location = new System.Drawing.Point(405, 530);
             this.btnGerenciarFornecedor.Name = "btnGerenciarFornecedor";
             this.btnGerenciarFornecedor.Size = new System.Drawing.Size(121, 31);
             this.btnGerenciarFornecedor.TabIndex = 64;
@@ -604,7 +605,7 @@
             this.btnCadastrarProduto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnCadastrarProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrarProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarProduto.Location = new System.Drawing.Point(287, 526);
+            this.btnCadastrarProduto.Location = new System.Drawing.Point(278, 525);
             this.btnCadastrarProduto.Name = "btnCadastrarProduto";
             this.btnCadastrarProduto.Size = new System.Drawing.Size(121, 31);
             this.btnCadastrarProduto.TabIndex = 65;
@@ -618,7 +619,7 @@
             this.btnCadastrarFornecedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnCadastrarFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrarFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarFornecedor.Location = new System.Drawing.Point(287, 526);
+            this.btnCadastrarFornecedor.Location = new System.Drawing.Point(278, 527);
             this.btnCadastrarFornecedor.Name = "btnCadastrarFornecedor";
             this.btnCadastrarFornecedor.Size = new System.Drawing.Size(121, 31);
             this.btnCadastrarFornecedor.TabIndex = 66;

@@ -30,7 +30,7 @@ namespace TCERP
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("OBG por testar");
+            MessageBox.Show("OBG,volte sempre");
             Application.Exit();
         }
 
@@ -109,7 +109,7 @@ namespace TCERP
             }
             catch
             {
-                MessageBox.Show("ERROR!");
+                MessageBox.Show("ERRO ao logar,verifique se foi cadastrado corretamente");
             }
           
         }

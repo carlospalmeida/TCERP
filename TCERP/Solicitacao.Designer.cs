@@ -166,6 +166,8 @@
             this.txtProduto.Size = new System.Drawing.Size(93, 20);
             this.txtProduto.TabIndex = 14;
             this.txtProduto.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtProduto_MouseClick);
+            this.txtProduto.TextChanged += new System.EventHandler(this.txtProduto_TextChanged);
+            this.txtProduto.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtProduto_MouseDown);
             // 
             // txtUnidade
             // 
@@ -183,13 +185,16 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 186);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 186);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(407, 310);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(463, 310);
             this.dataGridView1.TabIndex = 19;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
             // btnCadastroSolicitacao
             // 
@@ -255,7 +260,7 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(476, 186);
+            this.dataGridView2.Location = new System.Drawing.Point(472, 186);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(307, 310);
             this.dataGridView2.TabIndex = 51;
