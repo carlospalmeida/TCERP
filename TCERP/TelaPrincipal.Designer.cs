@@ -186,7 +186,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox2.Image = global::TCERP.Properties.Resources.TCERP_Logo2;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);

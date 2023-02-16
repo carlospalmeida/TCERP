@@ -73,7 +73,7 @@ namespace TCERP
         {
             DesativarBtn();
             AbriFormPainel(new Solicitacao());
-            btnGerenciamento.BackColor = Color.Red;
+            btnGerenciamento.BackColor = Color.Blue;
             
 
         }
@@ -83,7 +83,7 @@ namespace TCERP
             DesativarBtn();
             AbriFormPainel(new Aprovacao());
             
-            button1.BackColor = Color.Red;
+            button1.BackColor = Color.Blue;
             
         }
 
@@ -92,7 +92,7 @@ namespace TCERP
             DesativarBtn();
             AbriFormPainel(new cotacao());
             
-            button2.BackColor = Color.Red;
+            button2.BackColor = Color.Blue;
            
         }
 
@@ -101,7 +101,7 @@ namespace TCERP
             DesativarBtn();
             AbriFormPainel(new Analisecotacao());
             
-            button3.BackColor = Color.Red;
+            button3.BackColor = Color.Blue;
             
         }
 
@@ -110,7 +110,7 @@ namespace TCERP
             DesativarBtn();
             AbriFormPainel(new compra());
             
-            button4.BackColor = Color.Red;
+            button4.BackColor = Color.Blue;
            
         }
 
@@ -125,7 +125,7 @@ namespace TCERP
             DesativarBtn();
             AbriFormPainel(new cadastros());
             
-            button5.BackColor = Color.Red;
+            button5.BackColor = Color.Blue;
             
         }
 

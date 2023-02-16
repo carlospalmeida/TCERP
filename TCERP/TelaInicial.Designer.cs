@@ -39,7 +39,7 @@
             // 
             this.TCERPLogo.BackColor = System.Drawing.Color.White;
             this.TCERPLogo.Image = global::TCERP.Properties.Resources.TCERP_Logo_definitiva;
-            this.TCERPLogo.Location = new System.Drawing.Point(222, 100);
+            this.TCERPLogo.Location = new System.Drawing.Point(232, 104);
             this.TCERPLogo.Name = "TCERPLogo";
             this.TCERPLogo.Size = new System.Drawing.Size(326, 116);
             this.TCERPLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -50,7 +50,7 @@
             // 
             this.tcerp.BackColor = System.Drawing.Color.White;
             this.tcerp.Image = ((System.Drawing.Image)(resources.GetObject("tcerp.Image")));
-            this.tcerp.Location = new System.Drawing.Point(222, 211);
+            this.tcerp.Location = new System.Drawing.Point(232, 215);
             this.tcerp.Name = "tcerp";
             this.tcerp.Size = new System.Drawing.Size(326, 289);
             this.tcerp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

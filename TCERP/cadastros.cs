@@ -27,7 +27,6 @@ namespace TCERP
 
         }
 
-
         private void cadastros_Load(object sender, EventArgs e)
         {
             //Funcionarios
@@ -139,8 +138,6 @@ namespace TCERP
             txtFUNC6.Visible = true;
             btnCadastrarFuncionario.Visible = true;
             btnGerenciarFuncionario.Visible = true;
-            dataGridView1.Visible = true;
-           
 
             //deixar invisivel
             lbRAZ.Visible = false;
@@ -213,8 +210,7 @@ namespace TCERP
             txtProduto5.Visible = true;
             btnCadastrarProduto.Visible = true;
             btnGerenciarProduto.Visible = true;
-            dataGridView1.Visible = true;
-            dataGridView1.DataSource = Classcadastro.Selecionar("select * from erp.cadastros_produtos");
+
 
             //deixar invisivel
 
@@ -260,7 +256,6 @@ namespace TCERP
             txtFornecedor13.Visible = false;
             btnCadastrarFornecedor.Visible = false;
             btnGerenciarFornecedor.Visible = false;
-            
         }
 
         private void btnFornecedores_Click(object sender, EventArgs e)
@@ -296,8 +291,7 @@ namespace TCERP
             btnCadastrarFornecedor.Visible = true;
             btnGerenciarFornecedor.Visible = true;
             lbPreço.Visible = true;
-            dataGridView1.Visible = true;
-            dataGridView1.DataSource = Classcadastro.Selecionar("select * from erp.cadastros_fornecedor");
+          
 
             //deixar invisivel
             lbNomePord.Visible = false;
@@ -327,7 +321,6 @@ namespace TCERP
             btnCadastrarFuncionario.Visible = false;
             btnGerenciarFuncionario.Visible = false;
 
-            
 
         }
 

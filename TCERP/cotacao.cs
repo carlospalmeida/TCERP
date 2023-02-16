@@ -99,7 +99,6 @@ namespace TCERP
             {
                 Conexao.Conectar();
                 ClassCotacao.Inserir(int.Parse(txtCDCentro.Text), txtDescricao.Text, int.Parse(txtCD.Text), int.Parse(txtCDForncededor.Text));
-                MessageBox.Show("Cotação realizada com sucesso!");
             }
             catch
             {
