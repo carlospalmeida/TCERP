@@ -40,7 +40,7 @@ sera disponibilizado o download do mesmo.
 
 
 
-## IMPORTENTE: 
+## IMPORTANTE: 
 * o Sistemas está em desenvolvimento e foi feito por dois estudantes de TI por favor tenha paciencia em relação a ```bugs e erros```.
 * não coloque ```","``` coloque ```"."``` para os preços e numeros no software,exemplo: 150.00 , 15.0...
 * não é necerrasio colocar ```$``` aonde colocar preço e nem escrever ```reais```,o software entende que é preço e real como moeda.
